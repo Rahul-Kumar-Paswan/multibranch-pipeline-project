@@ -16,7 +16,7 @@ pipeline {
     stage('build') {
       steps {
         script {
-            def dockerCmd = 'docker run -d --name rahul-project -p 3000:3000 rahulkumarpaswan/my-python-project:1.2'
+            def dockerCmd = 'docker run -d --name supraja-project -p 3000:3000 rahulkumarpaswan/my-python-project:1.2'
             sshagent(['ec2-user-Rahul']) {
                 // some block
                 sh "ssh -o StrictHostKeyChecking=no ec2-user@15.206.153.146 ${dockerCmd}"
