@@ -4,7 +4,7 @@ pipeline {
   stages{
     stage('version') {
       steps {
-        echo "Hello Darlings"
+        echo "Hello Darling"
       }
     }
     stage('checking') {
